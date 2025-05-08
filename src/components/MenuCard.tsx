@@ -14,7 +14,7 @@ export default function MenuCard({ menu }: Props) {
       />
       <div className="p-4">
         <h3 className="text-lg font-semibold mb-1">{menu.name.en}</h3>
-        <p className="text-sm text-gray-600 mb-2">Category: {menu.category.name.en}</p>
+        <p className="text-sm text-gray-600 mb-2">Category: {menu.category?.name.en}</p>
         <p className="text-xl font-bold text-green-600">${menu.price.toFixed(2)}</p>
       </div>
     </div>
