@@ -13,7 +13,7 @@ export default function CategoryCard({ category }: { category: Category }) {
       className="relative cursor-pointer rounded overflow-hidden shadow hover:shadow-lg transition"
     >
       <Image
-        src={category.image}
+        src={category.image ?? "https://www.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-600nw-1037719192.jpg"}
         alt={category.name.en}
         width={400}
         height={200}
