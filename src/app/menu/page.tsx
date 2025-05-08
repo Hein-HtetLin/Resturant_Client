@@ -52,7 +52,7 @@ export default function MenusPage() {
   }, [selectedCategory]);
 
   const handleCategoryClick = (categoryId: string | null) => {
-    router.push(`/menu${categoryId ? `?categoryId=${categoryId}` : ''}`, { shallow: true });
+    router.push(`/menu${categoryId ? `?categoryId=${categoryId}` : ''}`);
   };
 
   return (
